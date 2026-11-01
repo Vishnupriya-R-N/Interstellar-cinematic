@@ -1,16 +1,84 @@
-# React + Vite
+# Interstellar — Beyond the Stars
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cinematic fan-made website inspired by the science-fiction movie *Interstellar*. Built using React and Vite, the website presents the film's story, characters, journey through space, and filmmaking credits in a space-inspired design.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Cinematic hero section
+- Story and journey sections
+- Character profiles featuring Cooper, Amelia Brand, and TARS
+- Filmmaking credits
+- Background imagery inspired by deep space
+- Navigation between sections
+- Responsive layout for mobile and desktop
+- Link to watch the movie on Netflix
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Vite
+- JavaScript
+- HTML
+- CSS
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/interstellar-website.git
+```
+
+Replace `YOUR_USERNAME` with your GitHub username.
+
+### 2. Navigate to the project folder
+
+```bash
+cd interstellar-website
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Run the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal to view the website.
+
+### 5. Build for production
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```text
+interstellar-website/
+├── public/
+│   ├── interstellar-scene.jpg
+│   └── interstellar-scene2.png
+├── src/
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## Deployment
+
+The website can be deployed using [Vercel](https://vercel.com/).
+
+## Disclaimer
+
+This is a fan-made website created for learning and portfolio purposes. Interstellar and its associated characters and imagery belong to their respective copyright holders. This project is not affiliated with or endorsed by the film's creators.
+
+---
+
+**Built with React and Vite. Inspired by the universe of Interstellar.**
