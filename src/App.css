@@ -1,0 +1,549 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background: #080b12;
+  color: #f4f1e9;
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Navigation */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff20;
+  z-index: 10;
+}
+
+.logo {
+  color: #d8c4a0;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  color: #d0d0d0;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d8c4a0;
+}
+
+/* Hero background */
+
+.hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 130px 7% 80px;
+  overflow: hidden;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(3, 7, 13, 0.72) 0%,
+      rgba(3, 7, 13, 0.38) 45%,
+      rgba(3, 7, 13, 0.05) 100%
+    ),
+    url("/interstellar-bg.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.subtitle,
+.section-label {
+  color: #d8c4a0;
+  font-size: 11px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  color: #f4f1e9;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(70px, 10vw, 140px);
+  font-weight: 400;
+  letter-spacing: 5px;
+  line-height: 0.85;
+  margin: 30px 0;
+  text-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+.tagline {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.9;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.explore-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 18px 25px;
+  background: #d8c4a0;
+  color: #080b12;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.explore-button:hover {
+  background: #f4f1e9;
+  transform: translateY(-4px);
+}
+
+.side-text {
+  position: absolute;
+  right: 4%;
+  bottom: 12%;
+  color: #d8c4a0;
+  writing-mode: vertical-rl;
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+/* Mission */
+
+.mission {
+  padding: 120px 10%;
+  background: #101722;
+}
+
+.mission h2,
+.crew h2 {
+  color: #f4f1e9;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(38px, 6vw, 70px);
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 25px 0;
+}
+
+.mission-description {
+  max-width: 600px;
+  color: #b9c0ca;
+  line-height: 2;
+  font-size: 16px;
+}
+
+/* Story and Journey */
+
+.story-page {
+  min-height: 100vh;
+  padding: 120px 9%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+  background: #0b1018;
+  color: #f2f0e9;
+}
+
+.journey-page {
+  background: #111a26;
+}
+
+.story-content {
+  max-width: 650px;
+}
+
+.story-label {
+  color: #d9c6a4;
+  font-size: 12px;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+
+.story-content h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(40px, 5vw, 70px);
+  font-weight: normal;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.story-content p {
+  color: #c2c8d0;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.story-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 22px;
+  background: #d9c6a4;
+  color: #080b10;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.story-button:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+}
+
+.story-image {
+  min-height: 450px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  background-image:
+    linear-gradient(
+      0deg,
+      rgba(7, 10, 16, 0.4),
+      rgba(7, 10, 16, 0.05)
+    ),
+    url("/interstellar-scene.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.story-image .planet {
+  display: none;
+}
+
+.story-image > p {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  color: #e2d5bd;
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+
+
+/* Crew */
+
+.crew {
+  padding: 100px 10%;
+  background: #080b12;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.character-card {
+  height: 370px;
+  position: relative;
+  overflow: hidden;
+  background: #101722;
+  border: 1px solid #ffffff20;
+}
+
+.character-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.character-card:hover img {
+  transform: scale(1.05);
+}
+
+.card-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 35px 20px 20px;
+  background: linear-gradient(
+    transparent,
+    rgba(7, 10, 16, 0.95)
+  );
+}
+
+.card-caption small {
+  color: #d9c6a4;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.card-caption h3 {
+  color: #f4f1e9;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: normal;
+  margin-top: 8px;
+}
+
+/* Credits */
+
+.makers {
+  background: #0b1018;
+  color: #f2f0e9;
+  padding: 100px 9%;
+}
+
+.makers-heading {
+  max-width: 750px;
+  margin-bottom: 55px;
+}
+
+.makers-heading h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 8vw, 100px);
+  font-weight: 400;
+  line-height: 0.95;
+  margin: 25px 0;
+  letter-spacing: 1px;
+}
+
+.makers-heading h2 em {
+  color: #d9c6a4;
+  font-weight: 400;
+}
+
+.makers-description {
+  max-width: 500px;
+  color: #aeb6c0;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-top: 25px;
+}
+
+.makers-list {
+  width: 100%;
+}
+
+.maker-row {
+  display: grid;
+  grid-template-columns: 70px 200px 1fr 30px;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  text-decoration: none;
+  color: #f2f0e9;
+  transition: padding 0.3s ease, color 0.3s ease;
+}
+
+.maker-row:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.maker-row:hover {
+  padding-left: 12px;
+  color: #d9c6a4;
+}
+
+.maker-number {
+  font-size: 16px;
+  color: #7f8a99;
+}
+
+.maker-role {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aeb6c0;
+}
+
+.maker-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(18px, 2.4vw, 27px);
+  line-height: 1.4;
+}
+
+.maker-arrow {
+  font-size: 22px;
+  color: #d9c6a4;
+  text-align: right;
+  transition: transform 0.3s ease;
+}
+
+.maker-row:hover .maker-arrow {
+  transform: translate(4px, -4px);
+}
+
+/* Footer */
+
+.footer {
+  padding: 35px 8%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-top: 1px solid #ffffff20;
+  background: #080b12;
+  color: #a8afbb;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+/* Responsive design */
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 22px 6%;
+  }
+
+  .logo {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .hero {
+    min-height: 100vh;
+    padding: 130px 7% 80px;
+    background-position: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(60px, 15vw, 95px);
+  }
+
+  .subtitle {
+    font-size: 10px;
+    letter-spacing: 3px;
+    line-height: 1.8;
+  }
+
+  .tagline {
+    font-size: 15px;
+  }
+
+  .side-text {
+    display: none;
+  }
+
+  .mission,
+  .crew {
+    padding: 80px 7%;
+  }
+
+  .story-page {
+    grid-template-columns: 1fr;
+    padding: 90px 7%;
+    gap: 35px;
+  }
+
+  .story-image {
+    min-height: 320px;
+  }
+
+  .story-image .planet {
+    width: 160px;
+    height: 160px;
+  }
+
+  .character-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .character-card {
+    height: 350px;
+  }
+
+  .makers {
+    padding: 70px 7%;
+  }
+
+  .makers-heading {
+    margin-bottom: 40px;
+  }
+
+  .makers-heading h2 {
+    font-size: clamp(42px, 12vw, 65px);
+  }
+
+  .maker-row {
+    grid-template-columns: 35px 1fr 25px;
+    gap: 12px;
+    padding: 22px 0;
+  }
+
+  .maker-number {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  .maker-role {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 10px;
+  }
+
+  .maker-name {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 19px;
+  }
+
+  .maker-arrow {
+    grid-column: 3;
+    grid-row: 1 / 3;
+  }
+}
+.journey-image {
+  background-image: url("/interstellar-scene2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

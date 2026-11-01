@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #080b12;
+  color: #f4f1e9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: #d8c4a0;
+  color: #080b12;
+}
